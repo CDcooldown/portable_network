@@ -1,0 +1,2 @@
+network
+-DCATKIN_DEVEL_PREFIX=/home/robotics/portable_network/devel -DCMAKE_INSTALL_PREFIX=/home/robotics/portable_network/install -G Unix Makefiles

@@ -1,0 +1,10 @@
+{
+    "cmake.sourceDirectory": "/home/fishcatcher/portable_network/src/network",
+    "files.associations": {
+        "*.ipp": "cpp",
+        "bitset": "cpp",
+        "chrono": "cpp",
+        "algorithm": "cpp",
+        "ostream": "cpp"
+    }
+}
