@@ -72,7 +72,7 @@ int main(int argc, char** argv)
     double angle_increment = 0.05; // 调整角度增量以控制运动速度
 
 
-    boost::array<uint8_t, 6> mates_online = {true, true, false, true, false, false};
+    // boost::array<uint8_t, 6> mates_online = {true, true, false, true, false, false};
     // teaminfo.mates_online = mates_online;
 
     while (ros::ok()) {
@@ -80,10 +80,10 @@ int main(int argc, char** argv)
     // teaminfo.attack_right = !teaminfo.attack_right;
     teaminfo.player_number =  1;
     
-    mirrorVector3(teaminfo.attack_target);
-    mirrorVector3(teaminfo.ball_global);
+    // mirrorVector3(teaminfo.attack_target);
+    // mirrorVector3(teaminfo.ball_global);
     
-    transmitter->sendRaw(3838, (void *)&teaminfo, sizeof(teaminfo));
+    transmitter->sendRaw(57335, (void *)&teaminfo, sizeof(teaminfo));
     std::cout << "I'm sending Message!!" << std::endl;
     rate.sleep();
 
